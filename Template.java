@@ -37,8 +37,8 @@ class Template {  // Start of class.
 
     button.addActionListener(new ActionListener(){ // ActionListerner for sign-in button.
       public void actionPerformed(ActionEvent e){ // Button code starts here.
-
-        if(textField.getText().trim().equalsIgnoreCase("Admin") && passwordField.getText().trim().equals("password")) { // Runs if the textField is equal to "admin" or "Admin" and the passwordField is equal to "password".
+        // Line below runs if the textField is equal to "admin" or "Admin" and the passwordField is equal to "password".
+        if(textField.getText().trim().equalsIgnoreCase("Admin") && passwordField.getText().trim().equals("password")) {
           System.out.println("Access Granted"); // Prints "Access Granted".
           MainFrame mainFrame = new MainFrame(); // Creates new MainFrame object.
           frame.setVisible(false); // Sets sign-in frame invisible.
